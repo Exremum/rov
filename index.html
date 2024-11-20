@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+
+    <!-- Иконка сайта -->
+    <link rel="icon" href="src/logo.png">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<!-- Шапка -->
+<header>
+    <nav>
+        <a href="#home" onclick="scrollToSection('home')">Главная</a>
+        <a href="#projects" onclick="scrollToSection('projects')">Проекты</a>
+        <a href="#skills" onclick="scrollToSection('skills')">Навыки</a>
+        <a href="#contact" onclick="scrollToSection('contact')">Контакты</a>
+    </nav>
+</header>
+
+<!-- Главная страница: секция "Обо мне" -->
+<section id="home" class="container">
+    <div class="about-section">
+
+        <!-- Фото -->
+        <div class="about-photo">
+            <img src="src/alinkola.jpg" alt="Фотография">
+        </div>
+
+        <!-- Описание и статистика -->
+        <div class="about-content">
+            <h2>Обо мне</h2>
+            <p>Меня зовут Алина, я frontеnd-разработчик. Обладаю знаниями HTML, CSS и JavaScript, а также опытом работы с современными фреймворками. Умею создавать адаптивные и интуитивно понятные пользовательские интерфейсы, обеспечивая высокую производительность.</p>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <h3>10+</h3>
+                    <p>проектов</p>
+                </div>
+                <div class="stat-item">
+                    <h3>3+</h3>
+                    <p>опыта работы</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция "Проекты" -->
+<section id="projects" class="container projects-section">
+    <h2>Мои проекты</h2>
+
+    <!-- Проект 1 -->
+    <div class="project-card">
+        <h3 class="project-title">ClimbMates</h3>
+        <div class="project-images">
+            <img src="src/ClimbMates/cli1.PNG" alt="Изображение 1">
+            <img src="src/ClimbMates/cli2.PNG" alt="Изображение 2">
+            <img src="src/ClimbMates/cli3.PNG" alt="Изображение 3">
+            <img src="src/ClimbMates/cli4.PNG" alt="Изображение 4">
+        </div>
+        <p class="project-description">Этот проект был сделан на заказ, он предназначен для поиска напарника для скалолазания.</p>
+        <a href="http://climbmates.ru/landing" target="_blank"><button class="button-detail" onclick="alert('Подробнее о проекте 1')">Подробнее</button></a>
+    </div>
+
+    <!-- Проект 2 -->
+    <div class="project-card">
+        <h3 class="project-title">Web-top</h3>
+        <div class="project-images">
+            <img src="src/Web-top1/reguzh.PNG" alt="Изображение 1">
+            <img src="src/Web-top1/regna.PNG" alt="Изображение 2">
+            <img src="src/Web-top1/twiter.PNG" alt="Изображение 3">
+            <img src="src/Web-top1/test.PNG" alt="Изображение 4">
+        </div>
+        <p class="project-description">Этот проект был создан для тренировки создания форм регистрации/авторизации. Мини-твиттер, в котором можно отправить сообщение получателю, или же удалить данное сообщение. А также тест, в котором можно ответить на вопросы, и он покажет количество верных и неверных ответов.</p>
+        <a href="https://exremum.github.io/Web-top1/" target="_blank"><button class="button-detail" onclick="alert('Подробнее о проекте 2')">Подробнее</button></a>
+    </div>
+
+    <!-- Проект 3 -->
+    <div class="project-card">
+        <h3 class="project-title">Calculator</h3>
+        <div class="project-images">
+            <img src="src/Calculator/calk1.PNG" alt="Изображение 1">
+            <img src="src/Calculator/calk2.PNG" alt="Изображение 2">
+        </div>
+        <p class="project-description">Этот проект представляет собой простой калькулятор с возможностью переключения между светлой и темной темами. При загрузке страницы по умолчанию установлена темная тема.</p>
+        <a href="https://exremum.github.io/calculator/" target="_blank"><button class="button-detail" onclick="alert('Подробнее о проекте 1')">Подробнее</button></a>
+    </div>
+
+    <!-- Проект 4 -->
+    <div class="project-card">
+        <h3 class="project-title">Jesus-music</h3>
+        <div class="project-images">
+            <img src="src/Jesus-music/voic1.PNG" alt="Изображение 1">
+            <img src="src/Jesus-music/voic2.PNG" alt="Изображение 2">
+        </div>
+        <p class="project-description">Это проект прослушивания музыки Джизуса, можно установить свою скорость воспроизведения музыки, а также скачать трек.</p>
+        <a href="https://exremum.github.io/Jesus-music/" target="_blank"><button class="button-detail" onclick="alert('Подробнее о проекте 1')">Подробнее</button></a>
+    </div>
+
+    <!-- Проект 5 -->
+    <div class="project-card">
+        <h3 class="project-title">Snake</h3>
+        <div class="project-images">
+            <img src="src/Snake/zmeika1.png" alt="Изображение 1">
+        </div>
+        <p class="project-description">Это проект представляет собой простую игру змейку, ею можно управлять не только по стандарту стрелочками, а также клавишами WASD.</p>
+        <a href="https://exremum.github.io/Snake/" target="_blank"><button class="button-detail" onclick="alert('Подробнее о проекте 1')">Подробнее</button></a>
+    </div>
+
+    <!-- Проект 5 -->
+    <div class="project-card">
+        <h3 class="project-title">Planetary-corner</h3>
+        <div class="project-images">
+            <img src="src/Planetary-corner/planet1.PNG" alt="Изображение 1">
+            <img src="src/Planetary-corner/planet2.PNG" alt="Изображение 2">
+        </div>
+        <p class="project-description">Этот проект представляет собой сайт о планетах NASA. А также на нём можно узнать: все планеты, обзор планет, температуру планет, размер планет, что такое планета, о солнечной системе, а также новости и события NASA.</p>
+        <a href="https://exremum.github.io/Planetary-corner/" target="_blank"><button class="button-detail" onclick="alert('Подробнее о проекте 1')">Подробнее</button></a>
+    </div>
+
+    <!-- Проект 6 -->
+    <div class="project-card">
+        <h3 class="project-title">AuthorizationForma</h3>
+        <div class="project-images">
+            <img src="src/AuthorizationForma/forma1.PNG" alt="Изображение 1">
+            <img src="src/AuthorizationForma/forma2.PNG" alt="Изображение 2">
+            <img src="src/AuthorizationForma/forma3.PNG" alt="Изображение 3">
+        </div>
+        <p class="project-description">Этот проект представляет собой дизайн формы авторизации, в которой можно авторизоваться и установить галочку в поле «Запомнить меня», а если забыли пароль, то можно восстановить его через свой email.</p>
+        <a href="https://exremum.github.io/AuthorizationForma/" target="_blank"><button class="button-detail" onclick="alert('Подробнее о проекте 1')">Подробнее</button></a>
+    </div>
+
+    <!-- Проект 7 -->
+    <div class="project-card">
+        <h3 class="project-title">Mini-Twitter</h3>
+        <div class="project-images">
+            <img src="src/Mini-Twitter/twitter1.PNG" alt="Изображение 1">
+            <img src="src/Mini-Twitter/twitter2.PNG" alt="Изображение 2">
+            <img src="src/Mini-Twitter/twitter3.PNG" alt="Изображение 3">
+        </div>
+        <p class="project-description">Этот проект представляет собой мини-твиттер, в котором можно написать сообщение получателю, а также удалить его по надобности.</p>
+        <a href="https://exremum.github.io/twit/" target="_blank"><button class="button-detail" onclick="alert('Подробнее о проекте 1')">Подробнее</button></a>
+    </div>
+
+    <!-- Проект 8 -->
+    <div class="project-card">
+        <h3 class="project-title">Gallery</h3>
+        <div class="project-images">
+            <img src="src/Gallery/gal1.PNG" alt="Изображение 1">
+            <img src="src/Gallery/gal2.PNG" alt="Изображение 2">
+        </div>
+        <p class="project-description">Этот проект представляет собой простую галерею, в которой можно нажать на любое фото, и просмотреть все фото перещёлкиванием их на специальные стрелочки, и закрыть их на кнопку «крестик».</p>
+        <a href="https://exremum.github.io/Gallery/" target="_blank"><button class="button-detail" onclick="alert('Подробнее о проекте 1')">Подробнее</button></a>
+    </div>
+</section>
+
+<!-- Секция "Навыки" -->
+<section id="skills" class="container skills-section">
+    <h2>Мои навыки</h2>
+    <div class="skills-list">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Git</div>
+    </div>
+</section>
+
+<section id="contact" class="container contact-section">
+    <h2>Мои контакты</h2>
+    <div class="contact-list">
+        <a href="https://github.com/Exremum" target="_blank" class="contact-card">GitHub</a>
+        <a href="https://vk.com/a_nikolaeva04" target="_blank" class="contact-card">VK</a>
+        <a href="https://t.me/anikola01" target="_blank" class="contact-card">Telegram</a>
+        <a href="https://discordapp.com/users/739559855043510354/" target="_blank" class="contact-card">Discord</a>
+    </div>
+</section>
+
+<!-- Подвал -->
+<footer>
+    © Alina Nikolaeva 2024-2025
+</footer>
+</body>
+</html>
